@@ -171,9 +171,9 @@ static void pthread_cleanup_thread_specific_data_callback(int index, void *v_tls
         }
 
         // Once we iterated over the list once while running no destructors we're done.
-        if (!ran_any_destructors) {
-            break;
-        }
+        // if (!ran_any_destructors) {
+        //     break;
+        // }
     }
 
     /* Walk the list, freeing all entries and calling destructors if they are registered */
